@@ -1,46 +1,97 @@
-/*CSS reset settings here*/
-*{
-    margin: 0px;
-    padding: 0px;
-   }
-   #wrapper{
-    width: 950px;
-    background-color: silver;
-    margin: 0px auto;
-    padding: 20px;
-    vertical-align: top;
-   }
-   #header{
-    height: 150px;
-    background-color: green;
-    margin-bottom: 20px;
-   }
-   #navigation{
-    height: 300px;
-    width: 200px;
-    background-color: blue;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 15px;
-   }
-   #main_content{
-    height: 400px;
-    width: 700px;
-    background-color: red;
-    display: inline-block;
-    padding: 15px;
-    /* float: right; */
-   }
-   .subcontents{
-    height: 200px;
-    width: 210px;
-    background-color: yellow;
-    display: inline-block;
-    margin: 0px 10px 20px 0px;
-   }
-   #advertisement{
-    height: 120px;
-    width: 660px;
-    background-color: purple;
-   }
-   
+@media only screen and (max-width: 480px){
+    * {
+        display: none;
+    }
+}
+@media only screen and (min-width: 481px){
+    #wrapper {
+        width: 100%;
+        background-color: silver;
+        margin: 0px auto;
+        padding: 20px;
+        box-sizing: border-box
+    }
+    #header {
+        height: 220px;
+        width: 100%;
+        background-color: green;
+        margin-bottom: 20px;
+    }
+    #navigation {
+        display: none;
+    }
+    #main_content {
+        height: 900px;
+        width: 100%;
+        background-color: red;
+        padding: 15px;
+    }
+    #subcontents-first, #subcontents-second, #subcontents-last {
+        height: 300px;
+        width: 48.2%;
+        background-color: yellow;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+    #subcontents-first, #subcontents-last {
+        margin-left: 0px;
+    }
+    #advertisement {
+        height: 220px;
+        width: 100%;
+        background-color: purple;
+    }
+    .col {
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+@media only screen and (min-width: 1024px){
+    #wrapper {
+        width: 970px;
+        background-color: silver;
+        margin: 0px auto;
+        padding: 20px;
+        box-sizing: border-box
+    }
+    #header {
+        height: 150px;
+        width: 100%;
+        background-color: green;
+        margin-bottom: 20px;
+    }
+    #navigation {
+        height: 300px;
+        width: 23%;
+        background-color: blue;
+        margin-right: 15px;
+        display: inline-block;
+    }
+    #main_content {
+        height: 400px;
+        width: 74.95%;
+        background-color: red;
+        padding: 15px;
+    }
+    #subcontents-first, #subcontents-second, #subcontents-last {
+        height: 200px;
+        width: 31.936%;
+        background-color: yellow;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+    #subcontents-first {
+        margin-left: 0px;
+    }
+    #advertisement {
+        height: 120px;
+        width: 100%;
+        background-color: purple;
+    }
+    .col {
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
